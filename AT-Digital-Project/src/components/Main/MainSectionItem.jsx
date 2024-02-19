@@ -1,5 +1,6 @@
-/* eslint-disable react/prop-types */
+import { useState } from "react"
 
+/* eslint-disable react/prop-types */
 export default function MainSectionItem({
   img375,
   img768,
@@ -10,7 +11,11 @@ export default function MainSectionItem({
   imageOrder,
   descriptionOrder,
 }) {
-console.log(imageOrder, descriptionOrder)
+  const [order, setOrder] = useState({
+    imageOrder,
+    descriptionOrder,
+  })
+
   return (
     <section
       className="flex flex-col justify-center items-center mb-8 md:flex-row"
@@ -19,7 +24,7 @@ console.log(imageOrder, descriptionOrder)
         className={
           `object-cover px-12 my-4 h-[275px] w-[275px] 
           lg:h-[346px] lg:w-[346px] xl:h-[414px] xl:w-[414px] 
-          md:order-${imageOrder}`
+          md:order-${order.imageOrder}`
         }
         src={img1440}
         alt="section logo"
@@ -34,7 +39,7 @@ console.log(imageOrder, descriptionOrder)
                (max-width: 1439px) 1200px,
                (max-width: 1579px) 1440px'
       />
-      <div className={`flex flex-col justify-center items-center px-8 md:order-${descriptionOrder}`}>
+      <div className={`flex flex-col justify-center items-center px-8 md:order-${order.descriptionOrder}`}>
         <h2 className="text-3xl font-bold text-violet-700 text-center mb-8">{title}</h2>
         <p className="text-lg text-center mb-8">{description}</p>
         <button
