@@ -12,8 +12,7 @@ export default function Main() {
         img1440={item.extraLargeImage}
         title={item.title}
         description={item.description}
-        imageOrder={index % 2 === 0 ? 1 : 2}
-        descriptionOrder={index % 2 === 1 ? 1 : 2}
+        index={index}
       />)}
     </main>
   )
