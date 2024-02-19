@@ -12,9 +12,9 @@ export default function Navbar() {
   }
 
   if (!isToggle) {
-    baseClassNames = 'text-center uppercase py-4 sm:flex sm:flex-row sm:pb-0 items-center sm:w-3/5 md:w-1/2 lg:w-2/5 md:ml-auto border-t-4 border-white border-solid hidden';
+    baseClassNames = 'text-center uppercase py-4 sm:flex sm:flex-row sm:pb-0 items-center sm:w-3/5 md:w-1/2 lg:w-2/5 md:ml-auto border-t-4 border-white sm:border-none sm:pt-0 border-solid hidden';
   } else {
-    baseClassNames = 'text-center uppercase py-4 sm:flex sm:flex-row sm:pb-0 sm:w-3/5 md:w-1/2 lg:w-2/5 md:ml-auto border-t-4 border-white border-solid items-center'
+    baseClassNames = 'text-center uppercase py-4 sm:flex sm:flex-row sm:pb-0 sm:w-3/5 md:w-1/2 lg:w-2/5 md:ml-auto border-t-4 border-white border-solid sm:border-none sm:pt-0 items-center'
   }
 
   return (
