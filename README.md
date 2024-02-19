@@ -7,3 +7,4 @@
 3. Run `npm install` in the command prompt at the **Project root folder**.
 4. Once the dependencies are installed run `npm run dev`.
 5. App can be accessed on any web browser at the local development server address.
+6. You can also access the deployed website at [https://kalanaekanaykeatdigital.netlify.app/](https://kalanaekanaykeatdigital.netlify.app/).
