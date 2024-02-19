@@ -16,7 +16,7 @@ export default function Footer() {
       <div className='lg:flex lg:flex-row lg:justify-between'>
         <div className='lg:w-1/3 lg:grow'>
           <img src={footerLogo} alt="company-logo" className='mb-8'/>
-          <p className='mb-12 text-sm text-left md:w-1/3'>
+          <p className='mb-12 text-sm text-left md:w-1/3 lg:w-3/5 xl:w-2/5'>
             Your goal is our target. Not anything in between.
             We use online marketing platforms and tools to achieve
             single objective - your business results.
