@@ -1,9 +1,9 @@
-import { SECTION_DATA } from '../../data/mainSectionData';
+import { SECTION_DATA } from '../../util/mainSectionData';
 import MainSectionItem from './MainSectionItem';
 
 export default function Main() {
   return (
-    <main className='py-16 lg:px-24 xl:px-40'>
+    <main className='flex flex-col justify-center items-center py-16 lg:px-24 xl:px-40'>
       {SECTION_DATA.map((item, index) => <MainSectionItem 
         key={`${item}#${index}`}
         img375={item.smallImage}
@@ -13,7 +13,7 @@ export default function Main() {
         title={item.title}
         description={item.description}
         imageOrder={index % 2 === 0 ? 1 : 2}
-        descriptionOrder={index % 2 === 0 ? 2 : 1}
+        descriptionOrder={index % 2 === 1 ? 1 : 2}
       />)}
     </main>
   )

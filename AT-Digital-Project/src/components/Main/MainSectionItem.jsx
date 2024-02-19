@@ -10,15 +10,16 @@ export default function MainSectionItem({
   imageOrder,
   descriptionOrder,
 }) {
-
+console.log(imageOrder, descriptionOrder)
   return (
     <section
       className="flex flex-col justify-center items-center mb-8 md:flex-row"
     >
       <img
         className={
-          `object-cover px-12 my-4 h-[275px] w-[275px] md:order-${imageOrder}
-          lg:h-[346px] lg:w-[346px] xl:h-[414px] xl:w-[414px]`
+          `object-cover px-12 my-4 h-[275px] w-[275px] 
+          lg:h-[346px] lg:w-[346px] xl:h-[414px] xl:w-[414px] 
+          md:order-${imageOrder}`
         }
         src={img1440}
         alt="section logo"
